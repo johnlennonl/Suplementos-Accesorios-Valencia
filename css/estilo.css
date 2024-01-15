@@ -2,25 +2,23 @@
 
 
 body {
-    background: #232526;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    background: #1D4350;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 
 /* LOGO*/
 .logo {
-    width: 150px;
+    width: 100px;
 }
 
 /* navText */
 
 .navText {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .navText:hover {
@@ -35,15 +33,18 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 /* CARD*/
 
 .cardShockh {
-    width: 11rem;
+    width: 9rem;
     margin: 5px;
     background-color: transparent;
     border: none;
     border-radius: 10%;
-    transition: 0.5s;
+    transition: 0.3s;
+
+
 }
 .imgShock {
     border-radius: 10px;
+    
 }
 
 .cardShockh:hover {
@@ -55,20 +56,31 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 .tituloCategoria {
     text-align: center;
     padding-top: 30px;
-    color: darkgoldenrod;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
+
 .tituloCategoria:hover {
+    color: rgb(206, 206, 66);
+}
+
+.subTituloCategoria {
+    text-align: center;
     color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .cardCategoria {
     width: 300px;
-    margin: 5px;
+    margin: 8px;
     background-color: transparent;
     border: none;
     border-radius: 10%;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .cardCategoria:hover {
@@ -78,6 +90,23 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
 
 
 /* FOOTER */
+
+/* Logo de WhatsApp*/
+
+.logoContacto {
+    width: 70px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    position: fixed;
+    
+}
+
+.logoContacto:hover {
+    transform: scale(1.1);
+}
+
+
 
 .cardFooter {
     background-color: transparent;
@@ -98,3 +127,23 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
     color: white;
 }
 
+
+/* SUPLEMENTOS*/
+
+.cardSuplemento {
+    width: 300px;
+    margin: 8px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    padding-top: 20px;
+
+}
+
+.tituloSuplemento {
+    color: white;
+}
+.subtituloSuplemento {
+    color: rgba(245, 245, 245, 0.575);
+}
