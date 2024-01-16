@@ -90,13 +90,14 @@ body {
 }
 
 .cardCategoria {
-    width: 300px;
+    width: 350px;
     margin: 8px;
     background-color: transparent;
     border: none;
     /* border-radius: 10%; */
     transition: 0.5s ease-in-out;
     cursor: pointer;
+    gap: 1px;
 }
 
 .cardCategoria:hover {
@@ -132,7 +133,58 @@ body {
     transform: scale(1.1);
 }
 
+.notificacion {
+    position: relative;
+    display: inline-block;
+    max-width: 300px ;
+    padding: 20px 15px;
+    border-radius: 4px;
+    background-color: #141619;
+    color: #f6f5f9;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    animation: fade 4s linear forwards;
+}
 
+.progress{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right #529bdb, #3250bf);
+    border-radius: 4px;
+    animation: progress 3s .25s linear forwards;
+}
+
+@keyframes fade {
+    5%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+
+    }
+
+    90% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    95% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+@keyframes progress {
+    to {
+        width: calc(100% - 10px);
+    }
+}
 
 .cardFooter {
     background-color: transparent;
