@@ -134,7 +134,7 @@ body {
 }
 
 .notificacion {
-    position: relative;
+    position:relative;
     display: inline-block;
     max-width: 300px ;
     padding: 20px 15px;
