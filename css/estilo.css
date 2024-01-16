@@ -2,9 +2,11 @@
 
 
 body {
-    background: #1D4350;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
 
 }
 
@@ -24,12 +26,26 @@ background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, F
 .navText:hover {
     color: rgb(206, 206, 66);
 }
+.navSuplementos {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
 
 /* BANNER*/
 .banner {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
+
+
+/* TEXTO PRINCIPAL */
+
+.texCard  {
+    color: aliceblue;
+}
+
+.cardPrincipal {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
 /* CARD*/
 
 .cardShockh {
@@ -78,15 +94,25 @@ background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, F
     margin: 8px;
     background-color: transparent;
     border: none;
-    border-radius: 10%;
-    transition: 0.5s;
+    /* border-radius: 10%; */
+    transition: 0.5s ease-in-out;
     cursor: pointer;
 }
 
 .cardCategoria:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 
 }
+
+.info {
+    text-align: center;
+}
+.btnCatalogo {
+    margin-top: 5px;
+    
+}
+
+
 
 
 /* FOOTER */
@@ -146,4 +172,10 @@ background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, F
 }
 .subtituloSuplemento {
     color: rgba(245, 245, 245, 0.575);
+}
+
+/* HR STYLE*/
+
+hr {
+    color: aliceblue;
 }
